@@ -29,7 +29,7 @@ header {
     background-color: black;
     color: white;
     top: 0;
-    /* z-index: 999; # makes sure it is 999th priority (top) of other elements*/
+    z-index: 999;
     padding: 10px 0;
 }
 
@@ -102,12 +102,21 @@ nav a:hover {
     height: 500px;
     border-radius: 50%;
     margin-right: 20px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.2);
 }
 
 .intro-text {
     flex: 1;
     color: black;
     padding-left: 100px;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.05);
 }
 
 .highlight {
@@ -130,23 +139,28 @@ nav a:hover {
     background-color: #a0328e;
 }
 
+/* Divide Lines styles
+.line-divide {
+    color = black;
+} */
+
 /* About section styles */
 #about {
     background-color: purple;
     color: white;
-    padding-top: 50px;
 }
 
 #about h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .about-title {
-    
+    padding: 0 30% 0 0;
 }
 
 .about-text {
+    padding: 0 0 0 0;
 }
 
 /* Portfolio section styles */
