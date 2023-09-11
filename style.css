@@ -12,6 +12,10 @@ body {
 
 .container {
     max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 20px;
 }
@@ -19,10 +23,13 @@ body {
 /* Header styles */
 header {
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
     background-color: black;
     color: white;
+    top: 0;
+    /* z-index: 999; # makes sure it is 999th priority (top) of other elements*/
     padding: 10px 0;
 }
 
@@ -67,15 +74,40 @@ nav a:hover {
     color: purple;
 }
 
-/* Hero section styles */
-#hero {
-    text-align: center;
+/* Intro section styles */
+#intro {
+    text-align: left;
+    padding-top: 50px;
+}
+
+#intro h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+#intro h2 {
+    font-size: 36px;
+    /* margin-bottom: 20px; */
+}
+
+.intro-with-image {
+    display: flex;
+    align-items: center;
     padding: 100px 0;
 }
 
-#hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.intro-image img {
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    color: black;
+    padding-left: 100px;
 }
 
 .highlight {
@@ -100,13 +132,21 @@ nav a:hover {
 
 /* About section styles */
 #about {
-    background-color: white;
-    padding: 100px 0;
+    background-color: purple;
+    color: white;
+    padding-top: 50px;
 }
 
 #about h2 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 20px;
+}
+
+.about-title {
+    
+}
+
+.about-text {
 }
 
 /* Portfolio section styles */
