@@ -1,0 +1,11 @@
+I was born in the Chicagoland area and have lived there all the way until college where I chose Purdue University 
+in West Lafayette, IN. I grew up with a love for science and technology so it felt natural choosing engineering 
+as my field, and more specifically computer engineering. Recently, I had the opportunity to explore computer 
+engineering at Burns & McDonnell where, among other things, I designed an API using Visual Basic for Applications 
+to integrate an existing control software with a separate SQL reporting system server. I was also given the chance 
+to create a presentation and fly out to the job-site to present the solution to the client. Aside from my internship 
+experiences, I am very involved in clubs at Purdue like ML@Purdue and IEEE (Purdue Aerial Robotics Team) where I am
+continuing to build my experience in Python, Tensorflow, PyTorch, etc. I have developed a huge passion for machine 
+learning and artificial intelligence, and my goal is to continue learning both on my own and through the resources 
+provided to me at Purdue and through future professional opportunities. If there is one thing you should take away 
+from me, its that I am a determined learner, and I will stop at nothing to dive into a new topic and figure it out.
