@@ -1,5 +1,5 @@
   ---
   deployment:
     tasks:
-      - export DEPLOYPATH=/home2/ocjtthmmy/public_html
-      - /bin/cp -R /repositories/personal-website $DEPLOYPATH
+      - export DEPLOYPATH=/home2/ocjthmmy/public_html
+      - /bin/cp -R repositories/personal-website $DEPLOYPATH
