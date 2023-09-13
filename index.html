@@ -1,115 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zachary Kouba</title>
-    <link rel="icon" href="Kouba Logo Circle.png">
-    <link rel="stylesheet" href="public/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-</head>
-<body>
-    <header>
-        <div class="logo">
-                <img src="Kouba Logo Circle.png" width=100 height=100 alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="workinprogress.html">Experience</a></li>
-                <li><a href="workinprogress.html">Projects</a></li>
-                <li><a href="workinprogress.html">Contact</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <title>Zachary Kouba Personal Website</title>
+        <!-- ADD MAIN ICON -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="public/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="resources/Kouba Logo Circle.png" alt="Logo">
+            </div>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- INTRODUCTION BELOW HEADER -->
+        <section class="intro" id="home">
+            <!-- __ refers to child of section, then -- refers to modification of child of section -->
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Zachary Kouba</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Computer Engineer</p>
+            <img src="resources/Zack Kouba Profile Picture.jpg" alt="Picture of Zachary Kouba">
+        </section>
+        
+        <!-- WHAT I KNOW, LANGUAGES -->
+        <section class="my-skills" id="skills">
+            <!-- Title with underline; Body of many boxes referring to languages, with flipping characteristics -->
+            <h2 class="section__title section__title--knowledge">My Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Python</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae tempora deserunt soluta assumenda sunt voluptate eligendi sequi, ad sint! Nesciunt temporibus illo laudantium, quae pariatur rem expedita iure impedit?</p>
+                </div> <!-- /skill -->
+                <div class="skill">
+                    <h3>C and C++</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptas vitae voluptatibus, quisquam velit, harum esse dolores laborum consectetur laboriosam impedit. Vero earum exercitationem saepe perferendis quis maxime, temporibus at.</p>
+                </div> <!-- /skill -->
+                <div class="skill">
+                    <h3>HTML, CSS, JavaScript</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptate nulla sit maxime sapiente esse facilis, nihil, eaque ipsam, corrupti cum aut voluptates? Adipisci nam, blanditiis voluptate saepe harum aliquid.</p>
+                </div> <!-- /skill -->
+            </div> <!-- /skills -->
+            
+            <a href="#skills" class="btn">My Skills</a>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequuntur temporibus sed impedit facilis adipisci necessitatibus repellat, nam vel quasi atque optio voluptates amet magni, asperiores fugiat soluta ipsum repudiandae.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, odit iusto laudantium minima aliquid dolores, totam culpa, unde laborum amet aperiam ipsam veniam recusandae eligendi enim? Quisquam excepturi maiores impedit.</p>
+            </div>
+
+            <img src="resources/Zack Kouba Profile Picture.jpg" alt="Picture of Zachary Kouba">
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="my-projects" id="projects">
+            <h2 class="section__title">My Projects</h2>
+            <p class="section__subtitle">(Subtitle)</p>
+
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 1">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 2">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 3">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 4">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 5">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 6">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 7">
+                </a>
+            </div>
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 8">
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <a href="mailto:zackkouba5@gmail.com" class="footer__link">zackkouba5@gmail.com</a>
+            <ul class="social-icons">
+                <li class="social-icons__item"><a class="social-icons__link" href="https://linkedin.com/in/zack-kouba">LinkedIn</a></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="https://github.com/zackkouba">GitHub</a></li>
+                <li class="social-icons__item"><a class="social-icons__link" href="#">HackerRank</a></li>
             </ul>
-        </nav>
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/zack-kouba" class="icon"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="icon"><i class="fab fa-github"></i></a>
-            <a href="#" class="icon"><i class="fab fa-hackerrank"></i></a>
-        </div>
-    </header>
-
-    
-    <section id="intro" class="intro-with-image">
-        <div class="container">
-            <div class="intro-image">
-                <div class="grow">
-                <img src="Zack Kouba Profile Picture.jpg" alt="Zachary Kouba">
-            </div>
-            </div>
-            <div class="intro-text">
-                <h1>Zachary Kouba</h1>
-                <hr>
-                <h2>Computer Engineer<br>Purdue University</h2>
-                <!-- <p>I'm <span class="highlight">Zachary Kouba</span>, a passionate <span class="highlight">Computer Engineering Student</span> at <span class="highlight">Purdue University</span>.</p> -->
-                <br>
-                <a href="#contact" class="cta-button">Get in Touch</a>
-            </div>
-        </div> <!-- container -->
-   
-    </section>
-
-    <!-- <hr color="black" width="75%"> -->
-
-    <!-- <div class="line-divide">
-            <img src="Website Horiz Line Left.png">
-    </div> -->
-
-
-    <section id="about">
-        <div class="container">
-            <div class="about-title">
-                <div class="about-box">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="about-text">
-                <h3>I was born in the Chicagoland area and have lived there all the way until college where I chose Purdue University 
-                    in West Lafayette, IN. I grew up with a love for science and technology so it felt natural choosing engineering 
-                    as my field, and more specifically computer engineering.<br>Recently, I had the opportunity to explore computer 
-                    engineering at Burns & McDonnell where, among other things, I designed an API using Visual Basic for Applications 
-                    to integrate an existing control software with a separate SQL reporting system server. I was also given the chance 
-                    to create a presentation and fly out to the job-site to present the solution to the client.<br>Aside from my internship 
-                    experiences, I am very involved in clubs at Purdue like ML@Purdue and IEEE (Purdue Aerial Robotics Team) where I am
-                    continuing to build my experience in Python, Tensorflow, PyTorch, etc.<br>I have developed a huge passion for machine 
-                    learning and artificial intelligence, and my goal is to continue learning both on my own and through the resources 
-                    provided to me at Purdue and through future professional opportunities.<br>If there is one thing you should take away 
-                    from me, its that I am a determined learner, and I will stop at nothing to dive into a new topic and figure it out.
-                </h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of project 1...</p>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of project 2...</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me...</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section> -->
-
-    <footer>
-        <p>&copy; 2023 Zachary Kouba. All rights reserved.</p>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
