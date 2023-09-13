@@ -6,21 +6,20 @@
         <title>Zachary Kouba Personal Website</title>
         <!-- ADD MAIN ICON -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/1de963151f.js" crossorigin="anonymous"></script>
         <!-- FONT ADDED BELOW -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3">
 
-        <link rel="stylesheet" href="public/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
             <div class="logo">
                 <img src="resources/Kouba Logo Circle.png" alt="Logo">
             </div>
-            <button class="nav-toggle" aria-label="Toggle Navigation">
+            <button class="nav--toggle" aria-label="Toggle Navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
@@ -28,7 +27,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -68,71 +67,68 @@
         <!-- ABOUT ME -->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I Am</h2>
-            <p class="section__subtitle section__subtitle--about"></p>
+            <p class="section__subtitle section__subtitle--about">Computer Engineering Student focusing on Software Engineering and ML/AI</p>
 
             <div class="about-me__body">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequuntur temporibus sed impedit facilis adipisci necessitatibus repellat, nam vel quasi atque optio voluptates amet magni, asperiores fugiat soluta ipsum repudiandae.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, odit iusto laudantium minima aliquid dolores, totam culpa, unde laborum amet aperiam ipsam veniam recusandae eligendi enim? Quisquam excepturi maiores impedit.</p>
             </div>
 
-            <img src="resources/Zack Kouba Profile Picture.jpg" alt="Picture of Zachary Kouba">
+            <img src="resources/Zack Kouba Profile Picture.jpg" alt="Picture of Zachary Kouba" class="about-me__img">
         </section>
 
         <!-- PROJECTS -->
         <section class="my-projects" id="projects">
-            <h2 class="section__title">My Projects</h2>
-            <p class="section__subtitle">(Subtitle)</p>
+            <h2 class="section__title section__title--projects">My Projects</h2>
+            <p class="section__subtitle section__subtitle--projects">An array of projects I have been involved in</p>
 
             <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 1">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 1" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 2">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 2" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 3">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 3" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 4">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 4" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 5">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 5" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 6">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 6" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 7">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 7" class="portfolio__img">
                 </a>
-            </div>
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="resources/Coding Stock Image.jpg" alt="Project 8">
+                <a href="portfolio.html" class="portfolio__item">
+                    <img src="resources/Coding Stock Image.jpg" alt="Project 8" class="portfolio__img">
                 </a>
             </div>
         </section>
 
         <!-- FOOTER -->
-        <footer>
+        <footer class="footer">
             <a href="mailto:zackkouba5@gmail.com" class="footer__link">zackkouba5@gmail.com</a>
             <ul class="social-icons">
-                <li class="social-icons__item"><a class="social-icons__link" href="https://linkedin.com/in/zack-kouba">LinkedIn</a></li>
-                <li class="social-icons__item"><a class="social-icons__link" href="https://github.com/zackkouba">GitHub</a></li>
-                <li class="social-icons__item"><a class="social-icons__link" href="#">HackerRank</a></li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="https://linkedin.com/in/zack-kouba"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="https://github.com/zackkouba"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#"><i class="fa-brands fa-hackerrank"></i></a> <!-- ADD HACKERRANK LINK -->
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#"><i class="fa-solid fa-code"></i></a> <!-- ADD LEETCODE LINK -->
+                </li>
             </ul>
         </footer>
+
+        <script src="js/index.js"></script>
     </body>
 </html>
