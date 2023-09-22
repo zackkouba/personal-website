@@ -309,7 +309,7 @@ header {
 }
 
 .skills {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .skill {
@@ -321,9 +321,9 @@ header {
     margin-bottom: 2em;
 }
 
-.skill__scale:hover {
+/* .skill__scale:hover {
     color: var(--clr-accent);
-}
+} */
 
 /* Split into columns when big screen */
 @media (min-width: 800px) {
@@ -332,6 +332,7 @@ header {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 3em;
     }
 
     .skill + .skill {
@@ -339,7 +340,13 @@ header {
     }
 
     .skill__scale {
-        margin-bottom: 0;
+        display: flex;
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    .skill__scale i {
+        margin: 0 auto;
     }
 }
 
@@ -468,11 +475,19 @@ header {
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: -2em auto;
 }
 
 .portfolio-item-individual p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.portfolio-item-individual img {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
