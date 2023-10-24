@@ -334,6 +334,8 @@ header {
     width: 20vw;
     max-height: 200px;
     max-width: 200px;
+    min-height: 100px;
+    min-width: 100px;
     background-color: var(--clr-light);
     border-radius: 20px;
     display: flex;
@@ -414,6 +416,11 @@ header {
     }
 }
 
+@media (max-width: 500px) {
+    .skill__img {
+        display: none;
+    }
+}
 
 
 /* About Me Section Styles */
@@ -540,6 +547,10 @@ header {
 }
 
 /* Individual Portfolio Items Styles */
+.portfolio-body {
+    margin-top: -7em;
+}
+
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;

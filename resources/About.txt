@@ -1,3 +1,5 @@
+Take 1:
+
 I was born in the Chicagoland area and have lived there all the way until college where I chose Purdue University 
 in West Lafayette, IN. I grew up with a love for science and technology so it felt natural choosing engineering 
 as my field, and more specifically computer engineering. Recently, I had the opportunity to explore computer 
@@ -9,3 +11,27 @@ continuing to build my experience in Python, Tensorflow, PyTorch, etc. I have de
 learning and artificial intelligence, and my goal is to continue learning both on my own and through the resources 
 provided to me at Purdue and through future professional opportunities. If there is one thing you should take away 
 from me, its that I am a determined learner, and I will stop at nothing to dive into a new topic and figure it out.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Take 2:
+
+I am a college student eager to learn and consume information through experiences, projects, schoolwork,
+and any other opportunity that presents itself to further my knowledge in computer and software engineering.
+
+I was born in the suburbs of Chicago where I spent my entire life up until I began attending Purdue University as
+a Computer Engineering student in the Elmore Family School of Electrical and Computer Engineering. Growing up I
+developed a huge love for engineering and technology through my father who raised me to analyze every situation
+and idea from the ground up. From a young age, I grew a passion for serving and helping the community, so I became
+involved in multiple organizations including my local church, a local food shelter, an overnight summer camp, and
+various other opportunities. Aside from service, I involved myself in multiple clubs in high school which paved the
+road for me to become involved in many college clubs and opportunities. At Purdue, I am a part of the IEEE as a whole
+and specifically the Purdue Aerial Robotics Team of IEEE, along with ML@Purdue, and I currently work as a
+teaching assistant for Purdue's Milestones Certification programs and classes. In my professional career, I have had
+2 internships with Christ Community Church and Burns & McDonnell, where I gained substantial experience in a variety
+of fields ranging from leadership and team building to software development, project planning, and situational
+decision making. I am looking forward to continuing my professional and personal career, and cannot wait for what
+is in store for my future!
+
+----------------------------------------------------------------------------------------------------------------------
+
