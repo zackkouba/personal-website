@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left .name {
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-right a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.main-header {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+
+.intro-section {
+    display: flex;
+    padding: 2rem;
+}
+
+.intro-section .left, .intro-section .right {
+    flex: 1;
+    padding: 1rem;
+}
+
+.intro-section .left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.languages-section {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+}
+
+.languages i {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+/* Add any additional styling as needed */
