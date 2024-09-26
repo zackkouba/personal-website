@@ -91,15 +91,19 @@ header {
 }
 
 .hamburger .bar {
-    width: 25px;
-    height: 3px;
+    width: 32px;
+    height: 2px;
     background-color: white;
-    margin: 5px 0;
+    margin: 4px 0;
     transition: 0.3s;
 }
 
 /* Media Queries */
 @media (max-width: 800px) {
+    .navbar ul {
+        display: none;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -110,6 +114,10 @@ header {
         background-color: #333;
         text-align: center;
         z-index: 1;
+    }
+
+    .navbar ul li a {
+        font-size: 24px;
     }
 
     .nav-links li {
