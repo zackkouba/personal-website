@@ -95,7 +95,25 @@ header {
     height: 2px;
     background-color: white;
     margin: 4px 0;
-    transition: 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    position: relative;
+}
+
+.hamburger:hover .bar {
+    background-color: #6a5acd;
+}
+
+/* When the menu is open - spin into an X */
+.hamburger.menu-open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px); /* Top bar turns into the top part of the X */
+}
+
+.hamburger.menu-open .bar:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.menu-open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px); /* Bottom bar turns into the bottom part of the X */
 }
 
 /* Media Queries */
@@ -131,6 +149,10 @@ header {
     .hamburger {
         display: flex;
     }
+
+    /* .hamburger.menu-open .bar {
+        background-color: #6a5acd;
+    } */
 }
 
 .btn {
