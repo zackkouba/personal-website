@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Zachary Kouba</title>
+    <script src="https://kit.fontawesome.com/1de963151f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,7 +13,7 @@
         <div class="navbar">
             <div class="logo">ZK</div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="experience.html">Professional Experience</a></li>
@@ -20,6 +21,11 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -29,23 +35,27 @@
             <h3>Programming Languages</h3>
             <div class="skills-grid">
                 <div class="skill-box">
-                    <img src="placeholder-logo.png" alt="Python">
+                    <img src="resources/skills/python.svg" alt="Python">
                     <p>Python</p>
                 </div>
                 <div class="skill-box">
-                    <img src="placeholder-logo.png" alt="C++">
-                    <p>C/C++</p>
+                    <img src="resources/skills/c-original.svg" alt="JavaScript">
+                    <p>C</p>
                 </div>
                 <div class="skill-box">
-                    <img src="placeholder-logo.png" alt="SQL">
+                    <img src="resources/skills/cplusplus-original.svg" alt="C++">
+                    <p>C++</p>
+                </div>
+                <div class="skill-box">
+                    <img src="resources/skills/mysql.svg" alt="SQL">
                     <p>SQL</p>
                 </div>
                 <div class="skill-box">
-                    <img src="placeholder-logo.png" alt="Go">
+                    <img src="resources/skills/go.svg" alt="Go">
                     <p>Go</p>
                 </div>
                 <div class="skill-box">
-                    <img src="placeholder-logo.png" alt="JavaScript">
+                    <img src="resources/skills/js.svg" alt="JavaScript">
                     <p>JavaScript</p>
                 </div>
             </div>
@@ -77,5 +87,7 @@
             </div>
         </div>
     </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
