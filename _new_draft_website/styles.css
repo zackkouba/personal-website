@@ -13,8 +13,14 @@ body {
 
 a {
     text-decoration: none;
-    color: #6a5acd;
+    /* color: #6a5acd; */
+    color: white;
+    transition: color 0.3s ease;
 }
+
+/* a:hover {
+    color: #6a5acd;
+} */
 
 header {
     background-color: #333;
@@ -39,12 +45,84 @@ header {
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .navbar ul li a {
     color: white;
     font-size: 16px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6a5acd;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #6a5acd;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a.active::after {
+    width: 100%;
+    background-color: white;
+}
+
+.navbar ul li a.active:hover::after {
+    background-color: #6a5acd;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
 
 .btn {
@@ -145,7 +223,8 @@ header {
 
 .experience-item {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -153,11 +232,33 @@ header {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    object-fit: contain;
 }
 
 .experience-item .details {
     font-size: 18px;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-item .details h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.experience-item p {
+    margin: 0;
+    font-size: 16px;
+    color: 666;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
 }
 
 /* Skills Page */
