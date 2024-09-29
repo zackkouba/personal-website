@@ -239,6 +239,10 @@ header {
     background-color: white;
 }
 
+.about-content h2 {
+    text-align: center;
+}
+
 .about-text, .about-info {
     width: 50%;
     padding: 20px;
@@ -247,6 +251,28 @@ header {
 .about-info {
     background-color: #6a5acd;
     color: white;
+    border-radius: 25px;
+}
+
+.fa-bullet {
+    list-style: none;
+    padding-left: 10px;
+}
+
+@media (max-width: 800px) {
+    .about-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-text, .about-info {
+        width: 100%; /* Make both panels take up full width */
+        padding: 15px; /* Adjust padding to provide more space */
+    }
+
+    .about-info {
+        margin-top: 20px; /* Add some spacing between the stacked panels */
+    }
 }
 
 /* Experience Page */
