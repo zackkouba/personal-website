@@ -446,6 +446,7 @@ footer {
 /* Skills Page */
 .skills-section {
     padding: 50px;
+    margin: 0px 120px;
 }
 
 .skills-category {
@@ -647,6 +648,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .skills-section {
+        margin: 0px 20px;
+    }
+
     .projects-list {
         margin: 0px 20px;
     }
