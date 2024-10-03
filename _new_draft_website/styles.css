@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -223,6 +227,8 @@ footer {
     .footer-content {
         flex-direction: column;
         align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .footer-links ul {
