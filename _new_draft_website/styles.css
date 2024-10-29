@@ -571,7 +571,10 @@ footer {
 .project-extra img {
     margin-bottom: 40px;
     max-height: 250px;
-    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .pills {
@@ -712,6 +715,27 @@ footer {
 
     .projects-list {
         margin: 0px 20px;
+    }
+
+    .project-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .project-item {
+        flex-direction: column-reverse;
+    }
+
+    .project-item .project-details {
+        width: 100%;
+    }
+
+    .project-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .project-extra img {
+        max-width: fit-content;
     }
 
     .pills {
