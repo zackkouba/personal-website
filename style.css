@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
 }
 
 a {
@@ -538,182 +538,96 @@ footer {
 }
 
 /* Projects Page */
-.projects-list {
-    padding: 50px;
+.projects-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
     margin: 0px auto;
-    align-items: center;
-    max-width: 1600px;
+}
+  
+.project-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    background: white;
+    position: relative;
+}
+
+.accent-stripe {
+    width: 8px;
+    background: #8a2be2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px 0 0 8px;
 }
 
 .project-content {
-    margin-left: 80px;
-    margin-right: 80px;
+    padding-left: 15px;
 }
 
-.project-item {
+.left-panel h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.left-panel p {
+    color: #555;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    background: #f4f4f4;
+}
+
+.right-panel h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Pills */
+.pill-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.project-item:nth-child(odd) {
-    flex-direction: row-reverse;
-}
-
-.project-extra {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-extra img {
-    margin-bottom: 40px;
-    max-height: 250px;
-    object-fit: contain;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-.pills {
-    display: flex;
+    gap: 8px;
     flex-wrap: wrap;
-    gap: 4px;
-    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
 .pill {
-    background-color: #999;
-    border-radius: 50px;
+    background: #e0e0e0;
     padding: 5px 10px;
-    /* margin-right: 5px; */
-    font-size: 14px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    color: #333;
     transition: transform 0.3s;
-    cursor: pointer;
 }
-
-.pill.python {
-    background-color: #3472A6; /* Blue */
-    color: #FFFFFF; /* White */
-}
-
-.pill.javascript {
-    background-color: #F7E018; /* Yellow */
-    color: #000000; /* Black */
-}
-
-.pill.java {
-    background-color: #5382A1; /* Dark Blue */
-    color: #FFFFFF; /* White */
-}
-
-.pill.cpp {
-    background-color: #00599C; /* Blue */
-    color: #FFFFFF; /* White */
-}
-
-.pill.c {
-    background-color: #A8B9CC; /* Light Blue */
-    color: #000000; /* Black */
-}
-
-.pill.html {
-    background-color: #E34C26; /* Orange */
-    color: #FFFFFF; /* White */
-}
-
-.pill.css {
-    background-color: #2965F1; /* Blue */
-    color: #FFFFFF; /* White */
-}
-
-.pill.typescript {
-    background-color: #3178C6; /* Blue */
-    color: #FFFFFF; /* White */
-}
-
-.pill.go {
-    background-color: #00ADD8; /* Teal */
-    color: #FFFFFF; /* White */
-}
-
-.pill.swift {
-    background-color: #FA7343; /* Orange */
-    color: #FFFFFF; /* White */
-}
-
-.pill.sql {
-    background-color: #CC7A00; /* Brown/Orange */
-    color: #FFFFFF; /* White */
-}
-
-.pill.bash {
-    background-color: #4EAA25; /* Green */
-    color: #FFFFFF; /* White */
-}
-
-.pill.restapi {
-    background-color: #3C8DAD; /* Teal/Blue */
-    color: #FFFFFF; /* White */
-}  
-
-.pill.arduino {
-    background-color: #00979D; /* Teal (Arduino official color) */
-    color: #FFFFFF; /* White */
-}
-  
-.pill.cad {
-    background-color: #0076A8; /* Blue (commonly associated with CAD software like AutoCAD) */
-    color: #FFFFFF; /* White */
-}
-  
-.pill.grafana {
-    background-color: #F46800; /* Orange (Grafana's logo color) */
-    color: #FFFFFF; /* White */
-}
-  
-.pill.aws {
-    background-color: #FF9900; /* Orange (AWS logo color) */
-    color: #000000; /* Black */
-}
-  
-.pill.cloudservices {
-    background-color: #4392F1; /* Light Blue (representing cloud services) */
-    color: #FFFFFF; /* White */
-}
-  
-.pill.linux {
-    background-color: #FCC624; /* Yellow (based on Tux logo color) */
-    color: #000000; /* Black */
-}
-
-.pill.ansible {
-    background-color: #EE0000; /* Red (Ansible logo color) */
-    color: #FFFFFF; /* White */
-}
-  
-.pill.networking {
-    background-color: #2D6E8E; /* Dark Blue (commonly used to represent network technologies) */
-    color: #FFFFFF; /* White */
-}  
 
 .pill:hover {
     transform: translateY(-2px);
 }
 
-.project-item .project-details {
-    width: 55%;
-    padding: 20px;
-}
+/* GitHub link */
+.github-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}  
 
 @media (max-width: 800px) {
-    .skills-section {
-        margin: 0px 20px;
-    }
-
-    .projects-list {
+    /* .projects-list {
         margin: 0px 20px;
     }
 
@@ -740,7 +654,7 @@ footer {
 
     .pills {
         font-size: 12px;
-    }
+    } */
 }
 
 /* Contact Page */
@@ -819,6 +733,10 @@ footer {
     .contact-info {
         margin-left: 0px;
         width: 100%;
+    }
+
+    .contact-info img {
+        margin-left: 20%;
     }
 
     .contact-form {

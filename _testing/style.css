@@ -1,0 +1,64 @@
+/* Container setup */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-panel {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    flex: 1;
+    background: white;
+  }
+  
+  .left-panel h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .left-panel p {
+    color: #555;
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    flex: 1;
+    background: #f4f4f4;
+  }
+  
+  .right-panel h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  /* Pills */
+  .pill-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .pill {
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  /* GitHub link */
+  .github-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+  }
+  

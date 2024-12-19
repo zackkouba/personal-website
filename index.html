@@ -1,298 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
-        <title>Zachary Kouba Personal Website</title>
-        <link rel="icon" href="resources/Kouba Logo Circle.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <script src="https://kit.fontawesome.com/1de963151f.js" crossorigin="anonymous"></script>
-        <!-- FONT ADDED BELOW -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3">
-
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="resources/Kouba Logo Circle.png" alt="Logo">
-            </div>
-            <button class="nav--toggle" aria-label="Toggle Navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Kouba Portfolio</title>
+    <script src="https://kit.fontawesome.com/1de963151f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">ZK</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="experience.html">Professional Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-        </header>
-
-        <!-- INTRODUCTION BELOW HEADER -->
-        <section class="intro" id="home">
-            <!-- __ refers to child of section, then -- refers to modification of child of section -->
-            <h1 class="section__title section__title--intro">
-                Hey, I'm <strong>Zachary Kouba</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">COMPUTER ENGINEER @ PURDUE</p>
-            <img src="resources/Zack Kouba Profile Picture.jpg" alt="Picture of Zachary Kouba" class="intro__img">
-        </section>
-        
-        <!-- WHAT I KNOW, LANGUAGES -->
-        <section class="my-skills" id="skills">
-            <!-- Title with underline; Body of many boxes referring to languages, with flipping characteristics -->
-            <h2 class="section__title section__title--skills">My Skills</h2>
-            <div class="skills">
-                <div class="skill__item">
-                    <img src="resources/python.svg" alt="Python Icon" class="skill__img">
-                    <h3>Python</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/cplusplus-original.svg" alt="C++ Icon" class="skill__img">
-                    <h3>C++</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/c-original.svg" alt="C Icon" class="skill__img">
-                    <h3>C</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/html.svg" alt="HTML Icon" class="skill__img">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/css.svg" alt="CSS Icon" class="skill__img">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/react.svg" alt="ReactJS Icon" class="skill__img">
-                    <h3>ReactJS</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/js.svg" alt="JavaScript Icon" class="skill__img">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/mysql.svg" alt="MySQL Icon" class="skill__img">
-                    <h3>MySQL</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/java-original.svg" alt="Java Icon" class="skill__img">
-                    <h3>Java</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/git.svg" alt="Git Icon" class="skill__img">
-                    <h3>Git</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/github-original.svg" alt="GitHub Icon" class="skill__img">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="skill__item">
-                    <img src="resources/linux-96.png" alt="Linux Icon" class="skill__img">
-                    <h3>Linux</h3>
-                </div>
-<!-- 
-                <div class="skill">
-                    <h3>Python</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>C</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>C++</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div>
-                </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="intro">Hello there! I'm</p>
+                <h1>Zachary<br>Kouba</h1>
+                <p class="intro_bottom">Computer Engineering<br>Purdue University</p>
+                <br>
+                <a href="resume.html" class="btn">My Resume</a>
+                <br><br>
+                <a href="contact.html" class="btn">Contact Me</a>
             </div>
-
-            <div class="skills">
-                <div class="skill">
-                    <h3>HTML</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>CSS</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div>
-                </div>
+            <div class="hero-emoji">
+                <img src="resources/Memoji.png" alt="Emoji" class="emoji-img">
             </div>
+        </div>
+    </section>
 
-            <div class="skills">
-                <div class="skill">
-                    <h3>SQL</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> 
-                </div> 
-                <div class="skill">
-                    <h3>ReactJS</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> 
-                </div> 
-                <div class="skill">
-                    <h3>Java</h3>
-                    <p></p>
-                    <div class="skill__scale">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div> 
-                </div>
-                
-             --> 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Professional Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            
-            <!-- <a href="#skills" class="btn">My Skills</a> -->
-        </section>
-
-        <!-- ABOUT ME -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">My Story</h2>
-            <p class="section__subtitle section__subtitle--about">Computer Engineering Student focusing on Software Engineering and ML/AI</p>
-
-            <div class="about-me__body">
-                <p>I am a college student eager to learn and consume information through experiences, projects, schoolwork,
-                    and any other opportunity that presents itself to further my knowledge in computer and software engineering.</p>
-                <p>I was born in the suburbs of Chicago where I spent my entire life up until I began attending Purdue University as
-                    a Computer Engineering student in the Elmore Family School of Electrical and Computer Engineering. Growing up I
-                    developed a huge love for engineering and technology through my father who raised me to analyze every situation
-                    and idea from the ground up. From a young age, I grew a passion for serving and helping the community, so I became
-                    involved in multiple organizations including my local church, a local food shelter, an overnight summer camp, and
-                    various other opportunities. Aside from service, I involved myself in multiple clubs in high school which paved the
-                    road for me to become involved in many college clubs and opportunities. At Purdue, I am a part of the IEEE as a whole
-                    and specifically the Purdue Aerial Robotics Team of IEEE, along with ML@Purdue, and I currently work as a
-                    teaching assistant for Purdue's Milestones Certification programs and classes. In my professional career, I have had
-                    2 internships with Christ Community Church and Burns & McDonnell, where I gained substantial experience in a variety
-                    of fields ranging from leadership and team building to software development, project planning, and situational
-                    decision making. I am looking forward to continuing my professional and personal career, and cannot wait for what
-                    is in store for my future!</p>
+            <div class="footer-socials">
+                <a href="https://github.com/zackkouba" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/zack-kouba" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/zackkouba" target="_blank"><i class="fa-solid fa-code"></i></a>
             </div>
-            <img src="resources/Zack Kouba Profile Picture.jpg" alt="Picture of Zachary Kouba" class="about-me__img">
-        </section>
-
-        <!-- PROJECTS -->
-        <section class="my-projects" id="projects">
-            <h2 class="section__title section__title--projects">My Projects</h2>
-            <p class="section__subtitle section__subtitle--projects">An array of projects I have been involved in</p>
-
-            <div class="portfolio">
-                <a href="calculator_project.html" class="portfolio__item">
-                    <img src="resources/Calculator Main Image.JPG" alt="Calculator Project" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 2" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 3" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 4" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 5" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 6" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 7" class="portfolio__img">
-                </a>
-                <a href="portfolio.html" class="portfolio__item">
-                    <img src="resources/Placeholder Image.jpg" alt="Project 8" class="portfolio__img">
-                </a>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <a href="mailto:zackkouba5@gmail.com" class="footer__link">zackkouba5@gmail.com</a>
-            <ul class="social-icons">
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="https://linkedin.com/in/zack-kouba"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="https://github.com/zackkouba"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="#"><i class="fa-brands fa-hackerrank"></i></a> <!-- ADD HACKERRANK LINK -->
-                </li>
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="#"><i class="fa-solid fa-code"></i></a> <!-- ADD LEETCODE LINK -->
-                </li>
-            </ul>
-        </footer>
-
-        <!-- Attempting Alert -->
-        <script>
-            window.onload = function myAlert() {
-                alert("NOTICE\n" + "This website is being revised\n" + "09/28/2024");
-            }
-        </script>
-
-        <!-- JavaScript for Hamburger -->
-        <script src="js/index.js"></script>
-    </body>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zachary Kouba. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
 </html>
