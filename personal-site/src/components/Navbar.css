@@ -1,0 +1,52 @@
+.navbar {
+  /* background-color: var(--navy); */
+  background-color: var(--white);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 1. This ensures the logo and links share the same vertical center */
+}
+
+.nav-icon {
+  margin-right: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon img {
+  /* 2. Tie the height to a relative unit so it matches your link text size */
+  height: 1.3rem; 
+  width: auto; /* Keeps the logo proportional */
+  object-fit: contain; /* Prevents the image from looking squished */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center; /* 3. Keeps the text perfectly aligned */
+}
+
+.nav-links a {
+  color: var(--primary-gray);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  line-height: 1; /* Removes extra vertical spacing around the text */
+}
+
+.nav-links a:hover {
+  color: var(--contrast);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+    /* font-size: 0.9rem; */ /* If you uncomment this, the logo might look big relative to the text on mobile */
+  }
+  
+  /* Optional: Shrink the logo slightly on mobile to match the smaller text */
+  .nav-icon img {
+    height: 1.1rem; 
+  }
+}
