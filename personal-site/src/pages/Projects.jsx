@@ -70,7 +70,7 @@ const projectData = [
       <FaPython title="Python" />, 
       <SiFlask title="Flask" />, 
       <SiMysql title="MySQL" />, 
-      <FaDocker title="Docker" />, 
+      <FaDocker title="Docker" />,
       <SiGooglecloud title="Google Cloud Platform" />, 
       <SiPostman title="REST APIs" />
     ]
