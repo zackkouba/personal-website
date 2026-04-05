@@ -1,0 +1,152 @@
+/* Container for the entire timeline */
+.timeline-container {
+  position: relative;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Space between each timeline point */
+}
+
+/* The vertical line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: -2rem;
+  bottom: -2rem;
+  width: 4px;
+  background-color: var(--primary-gray); /* Update with your CSS variables if needed */
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Individual timeline row */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* The left and right halves */
+.timeline-side {
+  width: 45%; /* Leaves 10% in the middle for the icon */
+  display: flex;
+  align-items: center;
+}
+
+/* Aligns content inside the halves */
+.left-side {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.right-side {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* The Hollow Circle */
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* Match this background color to your page background so it looks hollow */
+  background-color: var(--white); 
+  border: 4px solid var(--primary-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--white);
+  z-index: 3;
+}
+
+.timeline-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* The Box */
+.timeline-box {
+  background-color: var(--primary-gray); /* Dark box background */
+  padding: 20px 30px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+  min-width: 100%;
+}
+
+.timeline-box:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.timeline-box h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.8rem;
+  color: var(--contrast); /* Assumes you have your cyan variable from Home.css */
+}
+
+.timeline-box h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--white, #fff);
+}
+
+/* The Plain Text Date */
+.timeline-date {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--secondary-gray); /* Slightly faded text */
+  padding: 0 5px;
+  min-width: 100%;
+}
+
+/* =========================================
+   TOOLTIP LOGIC
+   ========================================= */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 115%; /* Positions it right above the box */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary-gray);
+  color: var(--white);
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: max-content;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none; /* Stops the tooltip itself from triggering hovers */
+  z-index: 10;
+}
+
+/* The little triangle pointing down */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: var(--secondary-gray) transparent transparent transparent;
+}
+
+/* Show the tooltip when hovering over the box */
+.timeline-box:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
